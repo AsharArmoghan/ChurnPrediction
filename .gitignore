@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Runtime artifacts (generated)
+artifacts/
+models/
+.pipeline_cache/
+database.db
+
+# Logs
+*.log
+
+# Interactive notebook scratch outputs
+notebooks/eda_plots/
+notebooks/report_demo/
+notebooks/*.csv
+notebooks/*.joblib
+
+# Temporary build/validation artifacts
+validate_out.json
+bench.log
+_run_val.bat
+_validate*.py
+bench_time.py
+
+# Kaggle dataset cache (large, downloaded on demand)
+.kaggle/
+.kilo/
+venv/
+.venv/
+env/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+*.code-workspace

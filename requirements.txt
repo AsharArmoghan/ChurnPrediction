@@ -1,0 +1,42 @@
+# Churn & Demand Analytics Suite - dependencies
+# =====================================================================
+# Versions reflect what is currently installed / validated in this
+# environment (Python 3.13).  Lower bounds are kept so the project
+# remains forward compatible.
+# =====================================================================
+
+# --- Web API / backend (FastAPI dashboard) ---
+fastapi>=0.141.0
+uvicorn[standard]>=0.52.0
+sqlalchemy>=2.0.0
+pydantic>=2.0.0
+
+# --- Core ML / data science ---
+numpy>=2.5.0
+pandas>=3.0.0
+scikit-learn>=1.9.0
+joblib>=1.5.0
+
+# --- Advanced pipeline: EDA, reporting, imbalance handling, progress ---
+matplotlib>=3.11.0
+seaborn>=0.13.0
+imbalanced-learn>=0.14.0
+tqdm>=4.70.0
+
+# --- Optional: download the real Kaggle churn dataset (soft-imported) ---
+kagglehub>=1.0.0
+
+# --- Optional: Jupyter notebooks (one per pipeline module, see notebooks/) ---
+# Uncomment to run / edit the .ipynb files with a local kernel:
+# jupyter>=1.0.0
+# nbformat>=5.7.0
+# nbconvert>=7.0.0
+# ipykernel>=6.0.0
+
+# --- Optional: heavy / explainability estimators, used only when present ---
+# xgboost>=2.0.0
+# lightgbm>=4.0.0
+# catboost>=1.2.0
+# optuna>=3.0.0
+# shap>=0.45.0
+
